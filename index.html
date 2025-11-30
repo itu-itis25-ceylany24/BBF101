@@ -8,6 +8,16 @@
     </head>
 </html>
 <body>
+     <label for="colorInput">Enter your name:</label> 
+    <input type="text" id="colorInput" onkeyup="changeBgColor()"
+        placeholder="Start typing here..." sytle="border: 2px solid black; padding:5px;">
+    <script>
+        function changeBgColor() {
+            let inputElement = document.getElementById('colorInput');
+            // Changes the background color to light blue as required by the assingnment. 
+            inputElement.style.backgroundColor = 'lightblue';
+        } 
+    </script>
     <p>
         <strong>Introduction to Information System </strong>
     </p>
@@ -76,17 +86,8 @@
                       Are you a beekeeper?
         This web page is right for you! I hope you enjoy it.
     </pre> 
-    <label for="colorInput">Type something to change the color:</label> 
-    <input type="text" id="colorInput" onkeyup="changeBgColor()"
-        placeholder="Start typing here..." sytle="border: 2px solid black; padding:5px;">
-    <script>
-        function changeBgColor() {
-            let inputElement = document.getElementById('colorInput');
-            // Changes the background color to light blue as required by the assingnment. 
-            inputElement.style.backgroundColor = 'lightblue';
-        } 
-    </script>
 </body>
 </html>
+
 
 
