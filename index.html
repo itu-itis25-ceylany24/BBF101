@@ -17,7 +17,20 @@
             // Changes the background color to light blue as required by the assingnment. 
             inputElement.style.backgroundColor = 'lightblue';
         } 
+        let colorIndex = 0; 
+const colors = ["red", "blue", "green", "gray"];
+
+function changeButtonColor() {
+    const button = document.getElementById('colorButton');
+    button.style.backgroundColor = colors[colorIndex];
+    colorIndex++;
+
+    if (colorIndex >= colors.length) {
+        colorIndex = 0;
+    }
+}
     </script>
+    <button id="colorButton" onclick="changeButtonColor()">Change Colors!</button> 
     <p>
         <strong>Introduction to Information System </strong>
     </p>
@@ -88,6 +101,7 @@
     </pre> 
 </body>
 </html>
+
 
 
 
